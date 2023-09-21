@@ -1,0 +1,9 @@
+import { UNIT } from "../interface/unit-interface";
+
+export const Unit : UNIT[] = [
+
+    {order: 1 , name: 'Sean Pagel' , initiative: 14 , dexterity: 12},
+    {order: 2 , name: 'Sean Pagel' , initiative: 14 , dexterity: 12},
+    {order: 3 , name: 'Sean Pagel' , initiative: 14 , dexterity: 12},
+
+];

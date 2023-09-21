@@ -5,6 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './unit.component.html',
   styleUrls: ['./unit.component.css']
 })
+
+
 export class UnitComponent {
+
+  displayedColumns: string[] = ['Order' , 'Name' , 'Initiative' , 'Dexterity'];
 
 }
