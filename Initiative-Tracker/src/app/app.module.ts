@@ -7,6 +7,7 @@ import { TitlePageComponent } from './tools/title-page/title-page.component';
 import { UnitComponent } from './tools/unit/unit.component';
 import { AddUnitComponent } from './tools/add-unit/add-unit.component';
 import { SaveUnitComponent } from './tools/save-unit/save-unit.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SaveUnitComponent } from './tools/save-unit/save-unit.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
