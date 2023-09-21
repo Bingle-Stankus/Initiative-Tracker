@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { UNIT } from 'src/app/models/interface/unit-interface';
 
+
 const UNITLIST : UNIT[] = [
 
   {order: 1 , name: 'Sean Pagel' , initiative: 14 , dexterity: 12},
@@ -10,16 +11,16 @@ const UNITLIST : UNIT[] = [
 ];
 
 @Component({
-  selector: 'app-unit',
+  selector: 'app-unit-page',
   templateUrl: './unit.component.html',
-  styleUrls: ['./unit.component.css']
+  styleUrls: ['./unit.component.css'],
 })
 
 
 
 export class UnitComponent {
 
-  displayedColumns: string[] = ['Order' , 'Name' , 'Initiative' , 'Dexterity'];
+  displayedColumns: string[] = ['order' , 'name' , 'initiative' , 'dexterity'];
   dataSource = UNITLIST;
 
 }

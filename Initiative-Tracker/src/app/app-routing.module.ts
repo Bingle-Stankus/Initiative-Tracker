@@ -10,6 +10,7 @@ import { SaveUnitComponent } from './tools/save-unit/save-unit.component';
 const routes: Routes = [
 
   {path: 'app-title-page', component: TitlePageComponent},
+  {path: 'app-unit-page', component: UnitComponent},
 
 ];
 

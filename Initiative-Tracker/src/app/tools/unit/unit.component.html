@@ -1,3 +1,27 @@
 <div>
-    
+    <table mat-table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="order">
+        <th mat-header-cell *matHeaderCellDef>Order</th>
+        <td mat-cell *matCellDef="let element">{{element.order}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let element">{{element.name}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="initiative">
+        <th mat-header-cell *matHeaderCellDef>Initiative</th>
+        <td mat-cell *matCellDef="let element">{{element.initiative}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="dexterity">
+        <th mat-header-cell *matHeaderCellDef>Dexterity</th>
+        <td mat-cell *matCellDef="let element">{{element.dexterity}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
 </div>
