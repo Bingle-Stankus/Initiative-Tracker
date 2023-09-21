@@ -1,0 +1,23 @@
+/*--- CLASSES ----------------------------------------- */
+
+.unit-list{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    max-width: 90%;
+}
+
+.unit-list-title{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    margin: auto;
+    margin-bottom: 3%;
+    max-width: 30%;
+
+    font-size: 30;
+    color: red;
+}

@@ -1,4 +1,10 @@
-<div>
+<div style="height:10%;">
+    <mat-card class="unit-list-title">
+        Unit List
+    </mat-card>
+</div>
+
+<div class="unit-list">
     <table mat-table [dataSource]="dataSource">
 
     <ng-container matColumnDef="order">
@@ -23,5 +29,6 @@
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
     </table>
 </div>
