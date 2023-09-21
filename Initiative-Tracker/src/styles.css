@@ -1,1 +1,317 @@
-/* You can add global styles to this file, and also import other style files */
+/* -------------------------- Animations -------------------------- */
+
+.anim_death{
+    animation: animDeath 1s ease-out forwards;
+}
+@keyframes animDeath{
+    
+    0%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+
+        width: 25em;
+        height: 5em;
+
+        background-color: grey;
+        color: black;
+    }
+
+    12.5%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+
+        width: 25em;
+        height: 5em;
+
+        background-color: grey;
+        color: black;
+
+        transform: rotate(5deg);
+    }
+
+    25%{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+    
+        width: 25.5em;
+        height: 5.1em;
+    
+        background-color: rgb(244, 137, 137);
+        color: black;
+
+        transform: rotate(-5deg);
+    }   
+
+    37.5%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+    
+        width: 25.5em;
+        height: 5.1em;
+    
+        background-color: rgb(244, 137, 137);
+        color: black;
+
+        transform: rotate(5deg);
+    }
+
+    50%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+    
+        width: 26em;
+        height: 5.2em;
+
+        background-color: red;
+        color: black;
+
+        transform: rotate(-5deg);
+    }
+
+    62.5%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+    
+        width: 26em;
+        height: 5.2em;
+
+        background-color: red;
+        color: black;
+
+        transform: rotate(5deg);
+    }
+
+    75%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+    
+        width: 25.5em;
+        height: 5.1em;
+
+        background-color: rgb(244, 137, 137);
+        color: black;
+
+        transform: rotate(-5deg);
+    }
+
+    87.5%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+    
+        width: 25.5em;
+        height: 5.1em;
+
+        background-color: rgb(244, 137, 137);
+        color: black;
+
+        transform: rotate(5deg);
+    }
+
+    100%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+    
+        width: 25em;
+        height: 5em;
+
+        background-color: grey;
+        color: black;
+    }
+
+}
+
+.anim_revive{
+    animation: animRevive 1s ease-out forwards;
+}
+@keyframes animRevive{
+
+    0%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+
+        width: 25em;
+        height: 5em;
+
+        background-color: grey;
+        color: black;
+    }
+
+    25%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+    
+        width: 25.5em;
+        height: 5.1em;
+    
+        background-color: rgb(143, 240, 126);
+        color: black;
+    }
+
+    50%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+    
+        width: 26em;
+        height: 5.2em;
+
+        background-color: green;
+        color: black;
+    }
+
+    75%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+    
+        width: 25.5em;
+        height: 5.1em;
+    
+        background-color: rgb(143, 240, 126);
+        color: black;
+    }
+
+    100%{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: .35em;
+
+        width: 25em;
+        height: 5em;
+
+        background-color: grey;
+        color: black;
+    }
+
+}
+
+/* --------------------------- Buttons ---------------------------- */
+
+.btn_nav{
+    border-radius: 10%;
+}.btn_nav:hover{
+    border: 1px solid red;
+    background-color: grey;
+    cursor: pointer;
+}
+
+
+/* -------------------------- Classes ----------------------------- */
+
+.center{
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+}
+
+.content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    border: 0px solid blue;
+}
+
+.dev-tools{
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 50%;
+
+    width: 20em;
+
+    background-color: white;
+}.dev-tools-header{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}.dev-tools-text{
+    color: black;
+    font-size: 15px;
+}
+
+.justify_right{
+    justify-content: right;
+    margin: auto;
+}
+
+.row-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.tracked_unit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: .35em;
+
+    width: 25em;
+    height: 5em;
+    
+    border: 5px solid red;
+
+    background-color: grey;
+    color: black;
+}
+
+/* ---------------------------- Elements --------------------------- */
+
+body{
+  background-color: black;  
+}
+
+h1{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+h2,h3{
+    color: white;
+}
