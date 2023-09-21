@@ -1,6 +1,9 @@
-<div style="height:10%;">
+<div>
     <mat-card class="unit-list-title">
-        Unit List
+        <mat-card-header style="font-size: 200%;">Unit List</mat-card-header>
+        <mat-card-content>
+            <button>test</button>
+        </mat-card-content>
     </mat-card>
 </div>
 
@@ -8,22 +11,22 @@
     <table mat-table [dataSource]="dataSource">
 
     <ng-container matColumnDef="order">
-        <th mat-header-cell *matHeaderCellDef>Order</th>
+        <th mat-header-cell *matHeaderCellDef style="font-size: large;">Order</th>
         <td mat-cell *matCellDef="let element">{{element.order}}</td>
     </ng-container>
 
     <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <th mat-header-cell *matHeaderCellDef style="font-size: large;">Name</th>
         <td mat-cell *matCellDef="let element">{{element.name}}</td>
     </ng-container>
 
     <ng-container matColumnDef="initiative">
-        <th mat-header-cell *matHeaderCellDef>Initiative</th>
+        <th mat-header-cell *matHeaderCellDef style="font-size: large;">Initiative</th>
         <td mat-cell *matCellDef="let element">{{element.initiative}}</td>
     </ng-container>
 
     <ng-container matColumnDef="dexterity">
-        <th mat-header-cell *matHeaderCellDef>Dexterity</th>
+        <th mat-header-cell *matHeaderCellDef style="font-size: large;">Dexterity</th>
         <td mat-cell *matCellDef="let element">{{element.dexterity}}</td>
     </ng-container>
 
