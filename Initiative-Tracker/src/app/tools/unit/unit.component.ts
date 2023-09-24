@@ -20,7 +20,7 @@ const UNITLIST : UNIT[] = [
 
 export class UnitComponent {
 
-  displayedColumns: string[] = ['order' , 'name' , 'initiative' , 'dexterity'];
+  displayedColumns: string[] = ['order' , 'name' , 'initiative' , 'dexterity' , 'actions'];
   dataSource = UNITLIST;
 
 }
