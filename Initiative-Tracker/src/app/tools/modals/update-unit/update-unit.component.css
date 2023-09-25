@@ -1,0 +1,14 @@
+/* =============== CLASSES ================================ */
+
+.buttons{
+    margin-bottom: 0;
+}
+
+.update-modal{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    /* margin: auto; */
+
+}
