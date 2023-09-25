@@ -13,27 +13,27 @@
     <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef style="font-size: large;"> Actions </th>   
         <td mat-cell *matCellDef="let element"> 
-            <button mat-raised-button >Delete</button> 
+            <button mat-raised-button (click)="openUpdateDialog()"> Edit </button> 
         </td>
     </ng-container>
         
     <ng-container matColumnDef="order">
-        <th mat-header-cell *matHeaderCellDef style="font-size: large;">Order</th>
+        <th mat-header-cell *matHeaderCellDef style="font-size: large;"> Order </th>
         <td mat-cell *matCellDef="let element">{{element.order}}</td>
     </ng-container>
 
     <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef style="font-size: large;">Name</th>
+        <th mat-header-cell *matHeaderCellDef style="font-size: large;"> Name </th>
         <td mat-cell *matCellDef="let element">{{element.name}}</td>
     </ng-container>
 
     <ng-container matColumnDef="initiative">
-        <th mat-header-cell *matHeaderCellDef style="font-size: large;">Initiative</th>
+        <th mat-header-cell *matHeaderCellDef style="font-size: large;"> Initiative </th>
         <td mat-cell *matCellDef="let element">{{element.initiative}}</td>
     </ng-container>
 
     <ng-container matColumnDef="dexterity">
-        <th mat-header-cell *matHeaderCellDef style="font-size: large;">Dexterity</th>
+        <th mat-header-cell *matHeaderCellDef style="font-size: large;"> Dexterity </th>
         <td mat-cell *matCellDef="let element">{{element.dexterity}}</td>
     </ng-container>
 
@@ -41,4 +41,14 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
     </table>
+</div>
+
+<div>
+    <mat-card class="dev-tools">
+        <mat-card-header>Dev Tools</mat-card-header>
+        <mat-card-content>
+            <button (click)="devToolsNavTitle()">Navigate to Title</button>
+            <button>Navigate to Title</button>
+        </mat-card-content>
+    </mat-card>
 </div>

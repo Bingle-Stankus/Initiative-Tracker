@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { TitlePageComponent } from './tools/title-page/title-page.component';
 import { UnitComponent } from './tools/unit/unit.component';
-import { AddUnitComponent } from './tools/add-unit/add-unit.component';
 import { SaveUnitComponent } from './tools/save-unit/save-unit.component';
+import { AddUnitComponent } from './tools/modals/add-unit/add-unit.component';
 
 const routes: Routes = [
 

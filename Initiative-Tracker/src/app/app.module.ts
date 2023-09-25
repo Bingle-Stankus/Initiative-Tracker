@@ -10,8 +10,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TitlePageComponent } from './tools/title-page/title-page.component';
 import { UnitComponent } from './tools/unit/unit.component';
-import { AddUnitComponent } from './tools/add-unit/add-unit.component';
 import { SaveUnitComponent } from './tools/save-unit/save-unit.component';
+import { UpdateUnitComponent } from './tools/modals/update-unit/update-unit.component';
+import { AddUnitComponent } from './tools/modals/add-unit/add-unit.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { SaveUnitComponent } from './tools/save-unit/save-unit.component';
     TitlePageComponent,
     UnitComponent,
     AddUnitComponent,
-    SaveUnitComponent
+    SaveUnitComponent,
+    UpdateUnitComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +31,7 @@ import { SaveUnitComponent } from './tools/save-unit/save-unit.component';
     MatTableModule,
     MatCardModule,
     MatIconModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

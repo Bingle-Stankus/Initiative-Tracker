@@ -1,5 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { Router } from '@angular/router';
+import {MatDialog, MAT_DIALOG_DATA, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
+
+
 import { UNIT } from 'src/app/models/interface/unit-interface';
+import { UpdateUnitComponent } from '../modals/update-unit/update-unit.component';
+
+
 
 
 const UNITLIST : UNIT[] = [
@@ -22,5 +29,22 @@ export class UnitComponent {
 
   displayedColumns: string[] = ['order' , 'name' , 'initiative' , 'dexterity' , 'actions'];
   dataSource = UNITLIST;
+
+  constructor(
+    public dialog: MatDialog,
+    public router: Router,
+  ) {}
+
+  openUpdateDialog(): void{
+    console.log("Opening Update Dialog");
+
+
+    
+  }
+
+  // dev tools
+  devToolsNavTitle(): void{
+    this.router.navigate(['/app-title-page']);
+  }
 
 }
