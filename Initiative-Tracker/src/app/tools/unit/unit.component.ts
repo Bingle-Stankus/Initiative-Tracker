@@ -39,7 +39,7 @@ export class UnitComponent {
     console.log("Opening Update Dialog");
     const dialogRef = this.dialog.open(UpdateUnitComponent, {
       width:'40%',
-      height: '30%',
+      
     });
     dialogRef.afterClosed().subscribe(result => {
       console.log("Update Dialog Closed");
